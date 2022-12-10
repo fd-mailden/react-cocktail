@@ -1,0 +1,11 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 488px;
+    justify-content: space-between;
+    text-align: center;
+    @media (max-width: 1300px) {
+        width: 363px;
+        padding: 20px 0;
+    }
+}

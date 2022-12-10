@@ -1,0 +1,140 @@
+.credit-card {
+  margin: 0 auto;
+  width: 518px;
+  height: 356px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  &__inputs {
+    position: absolute;
+    bottom: 87px;
+    left: 80px;
+  }
+  &__card-numbers {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  &__bottom-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  &__bottom-inputs {
+    display: flex;
+    flex-direction: row;
+  }
+  &__input {
+    width: 300px;
+    background: transparent;
+    text-align: justify;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    line-height: 17px;
+    color: $white_color;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: 0;
+    &.-bottom {
+      margin-right: 25px;
+      width: 70px;
+    }
+  }
+  &__label {
+    font-family: "Proxima Nova extra bold";
+    font-size: 20px;
+    line-height: 24px;
+    color: $white_color;
+    margin: 16px 0;
+  }
+  @media (max-width: 768px) {
+    width: 418px;
+    height: 276px;
+    &__background {
+      width: 418px;
+      height: 276px;
+    }
+    &__inputs {
+      bottom: 63px;
+      left: 57px;
+    }
+  }
+  @media (max-width: 578px) {
+    width: 258px;
+    height: 216px;
+    &__background {
+      width: 258px;
+      height: 216px;
+    }
+    &__inputs {
+      bottom: 60px;
+      left: 37px;
+    }
+
+    &__label {
+      font-size: 14px;
+      line-height: 14px;
+      margin: 10px 0;
+    }
+    &__input {
+      width: 150px;
+      font-size: 14px;
+      line-height: 17px;
+      color: $white_color;
+      border: 0;
+      border-bottom: 2px solid rgb(255, 255, 255);
+      outline: 0;
+      &.-bottom {
+        margin-right: 25px;
+        width: 70px;
+      }
+    }
+  }
+}
+
+.error_icon{
+  fill: $gray;
+  position: absolute;
+  top: 32%;
+  left: 93%;
+  animation: shake 0.5s;
+
+  animation-iteration-count: 1;
+  transition: all 0.5s ease-out;
+  &.-bottom_left {
+    top: 83%;
+    left: 18%;
+  }
+  &.-bottom_right{
+    top: 83%;
+    left: 50%;
+  }
+
+  @media (max-width: 578px) {
+    top: 28%;
+    left: 77%;;
+  
+    &.-bottom_left {
+      top: 78%;
+      left: 38%;
+    }
+    &.-bottom_right{
+      top: 78%;
+      left: 87%;
+    }
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -1,0 +1,57 @@
+.modal-remove {
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 12px;
+  background-color: $white_color;
+
+  &__close {
+    margin-left: 88%;
+    padding: 15px;
+  }
+  &__inner {
+    padding: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color: $gray;
+  }
+  &__title {
+    margin: 30px 0;
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+  &__paragraph {
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 578px) {
+    &__close {
+      margin-left: 78%;
+      padding: 15px;
+    }
+    &__inner {
+      padding: 30px;
+
+    }
+    &__img{
+      width: 80px;
+      height: 80px;
+    }
+    &__title {
+      font-size: 20px;
+      margin: 10px 0;
+      line-height: 24px;
+    }
+    &__paragraph {
+      margin: 0 auto;
+      font-size: 13px;
+      line-height: 14px;
+      margin-bottom: 30px;
+      max-width: 150px;
+    }
+  }
+}

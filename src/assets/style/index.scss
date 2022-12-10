@@ -1,0 +1,27 @@
+@import "./base/base";
+@import-normalize;
+
+@import "./config/mixins";
+@import "./config/global_variables";
+@import "./fonts/fonts";
+
+@import "./modules/header-menu/index.scss";
+
+@import "./modules/main-page/index.scss";
+
+@import "./modules/cocktail-page/cocktail-page";
+
+@import "./modules/cart/index.scss";
+
+@import "./modules/_cocktails-grid";
+@import "./modules/search";
+@import "./modules/credit-card";
+
+@import "./modules/footer/footer";
+
+@import "./modules/modal-content/index.scss";
+
+@import "../../components/UI/ModalWindow/ModalWindow.module.scss";
+
+
+

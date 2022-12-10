@@ -1,0 +1,48 @@
+.col-5 {
+  width: calc(30% - var(--gutter));
+}
+.col-3 {
+  width: calc(30% - var(--gutter));
+}
+
+.table {
+  font-family: "Proxima Nova";
+  width: 1301px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  color: $gray;
+  background-color: $peach_color;
+  border-collapse: collapse;
+  overflow: hidden;
+  @media (max-width: 1600px) {
+    width: 100%;
+  }
+  &__header {
+    width: 95%;
+    margin: 0 auto;
+    text-align: start;
+    // padding-left: 50px;
+    display: flex;
+  }
+  &__title {
+    font-size: 14px;
+    height: 23.7px;
+    padding: 35px;
+    margin: 0;
+  }
+
+
+  @media (max-width: 992px) {
+
+  }
+  @media (max-width: 768px) {
+    &__header {
+      display: none;
+    }
+  }
+
+}
+
+

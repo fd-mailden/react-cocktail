@@ -1,0 +1,26 @@
+.modal-card {
+  max-height: 700px;
+  max-width: 650px;
+  border-radius: 12px;
+  background-color: $white_color;
+  text-align: center;
+  padding:  0 0 30px 0;
+  &__title {
+    padding: 20px 0 ;
+    font-family: "Proxima Nova";
+    margin:  0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: $gray;
+  }
+  &__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin: 0;
+    }
+  }
+}

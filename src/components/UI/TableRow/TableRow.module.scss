@@ -1,0 +1,159 @@
+@import "../../../assets/style/config/global_variables";
+
+.table_row {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-align: start;
+
+  &__item {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    &:nth-child(2) {
+      width: 40%;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product {
+  font-family: "Proxima Nova";
+  padding: 17px 17px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  &__image {
+    height: 135px;
+    border-radius: 10px;
+  }
+  &__details {
+    margin: 8px;
+  }
+  &__name {
+    font-family: "Proxima Nova Extra Bold";
+    max-width: 150px;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 17px;
+    color: $gray;
+  }
+  &__date {
+    font-size: 14px;
+    line-height: 152.34%;
+    color: $gray;
+  }
+  @media (max-width: 768px) {
+    padding: 0;
+    height: 150px;
+  }
+  @media (max-width: 578px) {
+    padding: 5px 10px 5px 0px;
+
+    &__details {
+      margin-left: 13px;
+    }
+    &__name {
+      margin: 0;
+    }
+   
+  }
+}
+
+.quantity {
+  z-index: 10;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  display: flex;
+  &__button {
+    width: 30px;
+    border: none;
+    background-color: $peach_color;
+    padding: 5px 11px;
+    margin: 0;
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 18px;
+    line-height: 175.78%;
+    color: $gray;
+    cursor: pointer;
+  }
+  &__input {
+    border: none;
+    background-color: $peach_color;
+    padding: 0 20px;
+
+    font-family: "Proxima Nova Bold";
+    font-size: 15px;
+    line-height: 175.78%;
+    color: $gray;
+    text-align: justify;
+  }
+  @media (max-width: 578px) {
+    margin: 5px;
+    &__input {
+      font-size: 14px;
+    }
+  }
+}
+.table {
+  height: 100%;
+  &__delete {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    // width: 20px;
+    // height: 20px;
+  }
+  &__img {
+    width: 20px;
+    height: 20px;
+    &:active {
+      margin: 2px;
+      width: 18px;
+      height: 18px;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  @media (max-width: 578px) {
+    &__price {
+      font-size: 14px;
+      padding: 0;
+    }
+    &__total {
+      font-size: 14px;
+    }
+  }
+  .total {
+    display: flex;
+    align-items: center;
+    &__title {
+      color: #bcbcbc;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.about {
+  margin-top: 144px;
+  margin: 0 auto;
+  width: 936px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &__item {
+    max-width: 255px;
+    text-align: center;
+    color: $gray;
+  
+  }
+  &__title {
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 20px;
+    line-height: 182.7%;
+    text-align: center;
+    margin: 24px 0 0 0;
+  }
+  &__text {
+    margin: 7px 0 0 0;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+  @media (max-width: 992px) {
+    width: 90%;
+    &__image {
+      width: 60px;
+      height: 60px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 140.7%;
+      margin: 15px 0 0 0;
+    }
+    &__text {
+      max-width: 170px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  @media (max-width: 578px) {
+    display: flex;
+    flex-direction: column;
+    &__item{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+    }
+    &__image {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    &__title {
+      font-size: 14px;
+      line-height: 120.7%;
+      margin: 10px 0 0 0;
+    }
+    &__text{
+      max-width: 200px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+

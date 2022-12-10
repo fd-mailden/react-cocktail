@@ -1,0 +1,119 @@
+@import "../../../assets/style/config/mixins";
+@import "../../../assets/style/config/global_variables";
+.card {
+  margin: 0 5px;
+  width: 273px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  border: 2px solid #efefef;
+  border-radius: 5px;
+  position: relative;
+
+  &__inner {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin: 0;
+    font-family: "Roboto Thin";
+    font-size: 24px;
+    line-height: 175.78%;
+    color: $gray;
+  }
+  &__price {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: text-bottom;
+    position: relative;
+    h2 {
+      font-family: "Roboto Thin";
+      font-size: 24px;
+      line-height: 175.78%;
+      color: $gray;
+    }
+    h1 {
+      font-family: "Proxima Nova Extra Bold";
+      font-size: 101px;
+      line-height: 175.78%;
+      @include colorGradient;
+      margin: 0;
+    }
+    p {
+      position: absolute;
+      right: 35px;
+      top: 111px;
+      font-family: "Proxima Nova";
+      font-size: 17px;
+      line-height: 21px;
+      color: $gray;
+    }
+  }
+  &__info {
+    p {
+      font-family: "Proxima Nova";
+      font-size: 14px;
+      line-height: 175.78%;
+      color: $gray;
+    }
+    ul {
+      li {
+        list-style-image: url(../../../assets/img/done.svg);
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        line-height: 175.78%;
+        color: $gray;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  }
+  &__background{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+  
+
+  @media (max-width: 992px) {
+    
+    width: 250px;
+    &__inner {
+      padding: 20px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 155.78%;
+    }
+    &__price {
+      h2 {
+        font-size: 18px;
+        line-height: 155.78%;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 155.78%;
+      }
+      p {
+        max-width: 200px;
+        right: 67px;
+        top: 39px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+   
+  }
+  @media (max-width: 578px) {
+    width: 250px;
+    &__inner {
+      padding: 15px;
+      width: 250px;
+    }
+  }
+}

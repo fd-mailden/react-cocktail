@@ -1,0 +1,48 @@
+@import "../../../assets/style/config/mixins";
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ffff;
+  position: relative;
+  vertical-align: auto;
+  @include colorGradient;
+  margin: 0 auto;
+  padding: 25px 0;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  &:after {
+    transition: all 0.3s ease-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    margin: 0 auto;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+    opacity:  0 ;
+  }
+  &:hover {
+    &:after {
+     transition: all 0.3s ease-out;
+     opacity: 1;
+    }
+  }
+  &--disabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
+}
+

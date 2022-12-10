@@ -1,0 +1,119 @@
+.build {
+  max-height: 900px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  &__background {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  &__left-img {
+    position: relative;
+    max-width: 729px;
+    background-image: url(../../../img/build-mast.svg);
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 250px;
+  }
+  &__img {
+    height: 800px;
+    width: 800px;
+    clip-path: url(#build-clip);
+  }
+  &__mask {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+  }
+  &__inner {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+  }
+  &__info {
+    margin-top: 200px;
+    margin-left: 150px;
+   max-width: 600px;
+
+    // text-align: center;
+  }
+  &__info-title {
+    max-width: 301px;
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 40px;
+    line-height: 158.34%;
+    @include colorGradient;
+  }
+  &__info-paragraph {
+    max-width: 446px;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    line-height: 24.61px;
+  }
+
+  @media (max-width: 1300px) {
+    max-height: 700px;
+    &__info {
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+    &__info-title {
+      font-size: 30px;
+    }
+    &__left-img {
+      margin-left: -150px;
+      margin-top: 50px;
+      bottom: 0px;
+    }
+    &__background-mast {
+      margin-left: -200px;
+    }
+    &__inner {
+      padding-top: 140px;
+      width: 90%;
+    }
+  }
+  @media (max-width: 992px) {
+    &__left-img {
+      display: none;
+    }
+    &__inner {
+      padding: 70px 0 50px 0;
+      display: flex;
+      justify-content: center;
+    }
+    &__info-title {
+      font-size: 32px;
+      line-height: 128.34%;
+    }
+    &__info-paragraph {
+      max-width: 350px;
+      font-size: 14px;
+      line-height: 20.61px;
+    }
+  }
+  @media (max-width: 578px) {
+    &__background {
+      bottom: 0;
+    }
+    &__inner {
+      padding: 20px 0 30px 0;
+    }
+    &__info {
+      width: 88%;
+      margin-left: 30px;
+    }
+    &__info-title {
+      font-size: 28px;
+    }
+    &__info-paragraph {
+      max-width: 350px;
+      font-size: 14px;
+      line-height: 20.61px;
+    }
+  }
+}

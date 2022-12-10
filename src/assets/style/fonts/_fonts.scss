@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../../fonts/Roboto-Bold/hinted-Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto-Bold/hinted-Roboto-Bold.woff") format("woff"),
+    url("../../fonts/Roboto-Bold/hinted-Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Thin";
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../../fonts/Roboto-Thin/hinted-Roboto-Thin.woff2") format("woff2"),
+    url("../../fonts/Roboto-Thin/hinted-Roboto-Thin.woff") format("woff"),
+    url("../../fonts/Roboto-Thin/hinted-Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Extra Bold";
+  src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"),
+    url("../../fonts/ProximaNova-Extrabld/hinted-ProximaNova-Extrabld.woff2")
+      format("woff2"),
+    url("../../fonts/ProximaNova-Extrabld/hinted-ProximaNova-Extrabld.woff")
+      format("woff"),
+    url("../../fonts/ProximaNova-Extrabld/hinted-ProximaNova-Extrabld.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("../../fonts/Proxima-Nova/hinted-ProximaNova-Regular.woff2")
+      format("woff2"),
+    url("../../fonts/Proxima-Nova/hinted-ProximaNova-Regular.woff")
+      format("woff"),
+    url("../../fonts/Proxima-Nova/hinted-ProximaNova-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+    url("../../fonts/ProximaNova-Bold/hinted-ProximaNova-Bold.woff2")
+      format("woff2"),
+    url("../../fonts/ProximaNova-Bold/hinted-ProximaNova-Bold.woff")
+      format("woff"),
+    url("../../fonts/ProximaNova-Bold/hinted-ProximaNova-Bold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

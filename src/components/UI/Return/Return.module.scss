@@ -1,0 +1,24 @@
+@import "../../../assets/style/config/global_variables";
+
+.return {
+  border-bottom: 2px solid $white_color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80px;
+  margin: 83px 0 39px 0;
+  &__title {
+    font-family: "Proxima Nova Bold";
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    text-decoration: none;
+    color: $gray;
+  }
+  &:hover {
+    border-bottom: 2px solid #ffc000;
+  }
+  @media (max-width: 1300px) {
+    margin: 50px 0 30px 0;
+  }
+}

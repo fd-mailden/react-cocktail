@@ -1,0 +1,64 @@
+.form {
+ padding-top: 117px;
+  &__inner {
+    min-height: 837px;
+    margin-bottom: 163px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    background-color: $peach_color;
+    padding: 67px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 20px;
+    line-height: 175.78%;
+    color: $gray;
+    margin-bottom: 55px;
+  }
+  &__input {
+    width: 423px;
+    height: 60px;
+    background: $white_color;
+    border: 1px solid $peach_color;
+    border-radius: 100px;
+    margin-bottom: 9px;
+    padding-left: 20px;
+    color: $gray;
+  }
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    &__inner {
+      min-height: 707px;
+      padding: 35px 0 0 0;
+      margin-bottom: 100px;
+    }
+  }
+  @media (max-width: 578px) {
+    &__inner {
+      height: 557px;
+    }
+    &__title {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    &__input {
+      width: 70%;
+      height: 40px;
+      font-size: 12px;
+    }
+  }
+}
+.btn_max_width {
+  min-width: 1435px;
+}
+.error{
+  margin: 0 0 5px 0;
+  padding: 5px;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  color: rgb(231, 114, 114);
+}
+

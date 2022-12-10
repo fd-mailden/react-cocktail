@@ -1,0 +1,70 @@
+.main {
+  margin-top: 100px;
+  background-color: $white_color;
+  display: block;
+  align-items: center;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__about {
+    padding-top: 144px;
+    background-color: $peach_color;
+  }
+  &__students-say {
+    margin: 50px 0 100px 0;
+  }
+
+  @media (max-width: 1300px) {
+    &__premium {
+      padding-top: 50px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__about {
+      padding-top: 50px;
+    }
+    &__students-say {
+      margin: 30px 0 50px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 60px;
+    &__premium {
+      padding-top: 10px;
+    }
+  }
+  @media (max-width: 578px) {
+    &__students-say {
+      margin: 15px 0 20px 0;
+    }
+  }
+}
+
+.main-title {
+  @include colorGradient;
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  line-height: 158.34%;
+  b {
+    font-family: "Proxima Nova Extra Bold";
+  }
+  @media (max-width: 578px) {
+    font-size: 28px;
+    line-height: 118.34%;
+  }
+}
+
+.main-text {
+  // margin:  0 auto;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 175.78%;
+  color: $gray;
+  margin-bottom: 30px;
+  @media (max-width: 578px) {
+    font-size: 14px;
+    line-height: 118.34%;
+  }
+}

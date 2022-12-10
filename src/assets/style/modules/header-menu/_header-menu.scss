@@ -1,0 +1,158 @@
+.header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  background: $white_color;
+  top: 0;
+  height: 114px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  &__inner {
+    margin: 0 auto;
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__navigation {
+    max-width: 1000px;
+    display: flex;
+  }
+  &__cart-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s ease-out;
+    &:active {
+      img {
+        width: 20px;
+        padding: 2px;
+        transition: all 0.5s ease-out;
+      }
+    }
+  }
+  &__cart-numbers {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 15px;
+    height: 15px;
+    background: $background_gradient;
+    border-radius: 50%;
+    text-align: center;
+    p {
+      padding-top: 2px;
+      font-size: 7px;
+      color: $white_color;
+      margin: 0 auto;
+    }
+  }
+  &__buttons {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 1300px) {
+    &__inner {
+      margin: 0 auto;
+      width: 90%;
+    }
+    &__cart-numbers {
+      right: 7px;
+      top: 26px;
+    }
+    &__buttons {
+      padding: 20px 0;
+    }
+  }
+  @media (max-width: 992px) {
+    &__buttons {
+      width: 130px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    &__logo {
+      margin-bottom: 23px;
+    }
+    &__cart-numbers {
+      right: 7px;
+      top: 22px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__cart-icon {
+      width: 25px;
+    }
+    height: 60px;
+    &__cart-numbers {
+      right: -5px;
+      top: -15px;
+    }
+    &__navigation {
+      display: none;
+    }
+    &__logo {
+      margin-bottom: 8px;
+    }
+  }
+  @media (max-width: 578px) {
+    &__logo {
+      width: 122px;
+    }
+  }
+}
+
+.menu-burger {
+  display: none;
+  @media (max-width: 768px) {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.burger-button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: 30px;
+    background: $background_gradient;
+  }
+  span {
+    content: "";
+    position: absolute;
+    top: 9px;
+    height: 3px;
+    width: 30px;
+    background: $background_gradient;
+  }
+  &::after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: $background_gradient;
+  }
+}

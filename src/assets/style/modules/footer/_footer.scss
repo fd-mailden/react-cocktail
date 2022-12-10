@@ -1,0 +1,129 @@
+.footer {
+ 
+  // height: 312px;
+  background-color: #212121;
+  color: $white_color;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px ;
+  &__inner {
+    padding: 20px;
+    color: $white_color;
+    width: 100%;
+    font-family: "Proxima Nova";
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1300px) {
+      width: 900px;
+    }
+    @media (max-width: 992px) {
+      width: 90%;
+    }
+  }
+  &__about {
+    max-width: 265px;
+  }
+  &__about-paragraph {
+    margin-top: 31px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__social-media {
+    margin-top: 40px;
+  }
+  &__social-media-img {
+    margin: 5px;
+  }
+  &__navigation {
+    padding-top: 30px;
+  }
+  &__contact {
+    padding-top: 30px;
+  }
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -50px;
+  }
+  &__faq-paragraph {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  &__company {
+    // height: 40px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    max-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__company-paragraph {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin: 0 0 0 5px;
+  }
+  &__privacy-policy {
+    display: flex;
+    flex-direction: row;
+    b {
+      margin: 0 0 0 3px;
+      @include colorGradient;
+      font-family: "Proxima Nova";
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      margin: 0 0 0 5px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__about {
+      max-width: 90%;
+    }
+    &__about-paragraph {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  &__faq-paragraph {
+    margin: 0;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  @media (max-width: 578px) {
+    // height: 480px;
+    padding-top: 10px;
+    &__inner {
+      height: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      // flex-direction: column;
+      justify-content: flex-start;
+      // align-items: center;
+    }
+    &__social-media {
+      margin-top: 10px;
+    }
+    &__navigation {
+      padding-top: 0px;
+    }
+    &__contact {
+      padding-top: 0px;
+    }
+  }
+}

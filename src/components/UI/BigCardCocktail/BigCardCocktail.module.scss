@@ -1,0 +1,80 @@
+@import "../../../assets/style/config/global_variables";
+@import "../../../assets/style/config/mixins";
+.card {
+  max-width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  overflow: hidden;
+  &__image {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &__info {
+    position: relative;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    li {
+      list-style: none;
+    }
+  }
+  &__title {
+    background: $background_gradient;
+    height: 80px;
+  }
+  &__paragraph {
+    margin: 0;
+    padding: 20px;
+    color: $white_color;
+    font-family: "Roboto";
+    font-size: 16px;
+  }
+  &__cart {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    opacity: 0;
+    &:active{
+      transition: all 0.3s ease-out;
+      width: 110px;
+      height: 110px;
+      right: 10px;
+      bottom: -10px;
+    }
+  }
+  &:hover {
+    .card__cart {
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+    box-shadow: -3px -1px 13px 11px rgba(137, 135, 124, 0.2);
+  }
+  @media (max-width: 592px) {
+    height: 100%;
+    &__inner {
+      display: block;
+      flex-direction: column;
+    }
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+    &__info {
+      height: 100%;
+      font-size: 14px;
+    }
+  }
+
+}
